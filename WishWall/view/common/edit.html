@@ -1,0 +1,16 @@
+<form action="./save.php?id=<?=$id>&page=<?=$page" method="post" >
+    我的名字：
+    <input type="text" name="name" placeholder="匿名"
+            value="<?=htmlspecialchars($edit['name'])?>">
+    贴纸颜色：
+    <input type="radio" name="color" value="green" <?=$edit['color'] == 'green' ? 'checked' : ''?> >
+    <input type="radio" name="color" value="bule" <?=$edit['color'] == 'bule' ? 'checked' : ''?> >
+    <input type="radio" name="color" value="yellow" <?=$edit['color'] == 'yellow' ? 'checked' : ''?> >
+    <input type="radio" name="color" value="red" <?=$edit['color'] == 'red' ? 'checked' : ''?> >
+    我的愿望：
+    <textarea name="content"><?=htmlspecialchars($edit['name'])?></textarea>
+    <input type="hidden" name="password" value="<?=htmlspecialchars($password)?>">
+    <input type="submit" name="" value="提交">
+    <input type="button" name="" value="取消">
+
+</form>
